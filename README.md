@@ -22,12 +22,12 @@ pip install ssh
 ```
 
 ```Python
-Flask==1.0.2
-Flask-Bootstrap4==4.0.2
-flask-navbar==1.0
-pycryptodome==3.7.3
-pyrebase==3.0.26
-pytz==2019.1
+import Flask==1.0.2
+import Flask-Bootstrap4==4.0.2
+import flask-navbar==1.0
+import pycryptodome==3.7.3
+import pyrebase==3.0.26
+import pytz==2019.1
 ```
 
-## Setup
+## Development Setup
