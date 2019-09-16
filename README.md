@@ -85,3 +85,8 @@ Launch Package | **docker-compose up -d**
 Check Logs | **docker-compose logs -tail 100 -f [ContainerName]**
 Check Space | **docker system df**
 Clear Space | **docker system prune -a**
+
+
+© [Brian Ruiz](https://github.com/BrianRuizy)
+
+------
