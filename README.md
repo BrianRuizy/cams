@@ -10,7 +10,8 @@ The objective is for this repository to act as a platform template for future ap
 
 ## Dependencies
 
-Frameworks and technologies include: 
+Frameworks and technologies include:
+
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) microframework.
 * [Docker](https://docs.docker.com/) containerization.
 * AWS [EC2](https://docs.aws.amazon.com/ec2/index.html), and [ECR](https://docs.aws.amazon.com/ecr/index.html) cloud computing.
@@ -18,6 +19,7 @@ Frameworks and technologies include:
 ## Prerequisites
 
 Must have the following accounts created, and security credentials at one's disposal:
+
 - [x] AWS dev. account and credentials
 - [x] AWS ECR access
 - [x] Downloaded AWS Key Pairs
@@ -25,6 +27,7 @@ Must have the following accounts created, and security credentials at one's disp
 - [ ] Firebase privelages
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
+
 ```bash
 pip install flask
 pip install docker-compose
@@ -43,32 +46,33 @@ import pytz==2019.1
 
 ## Development Setup
 
-
 ### Remote into AWS Node using SSH
+
 To connect to your local instance using SSH you specify the private key (.pem) file path, the user name for your AMI, and the public EC2 DNS name for your instance
 
 `$ ssh -i '..\AWS keys\firstkey.pem' ec2-user@ec2-13-59-134-160.us-east-2.compute.amazonaws.com`
 
  you should then see the following warning message.
- 
- ```
-Warning: Permanently added 'ec2-198-51-100-1.compute-1.amazonaws.com' (RSA) 
-to the list of known hosts.
-```
+
+ `Warning: Permanently added 'ec2-198-51-100-1.compute-1.amazonaws.com' (RSA)
+to the list of known hosts.`
 
 ### Setting up AWS and Docker
-1.    Launch Docker Desktop, if not done automatically at system boot. 
-2.    Configure the AWS CLI with command line
-```bash 
+
+1. Launch Docker Desktop, if not done automatically at system boot.
+2. Configure the AWS CLI with command line
+
+```bash
 $ aws configure
 AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
 AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Default region name [None]: us-east-2
 Default output format [None]: json
 ```
-3.    Login into AWS ECR, and generate Docker login command
+
+3. Login into AWS ECR, and generate Docker login command
 `aws ecr get-login --no-include-email`.
-A login key command will be generated, paste it back to the command line. You should be prompted with a succesful login. 
+A login key command will be generated, paste it back to the command line. You should be prompted with a succesful login.
 
 ### Docker Commands
 
