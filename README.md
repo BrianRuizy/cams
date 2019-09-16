@@ -4,6 +4,5 @@
     E-TRaC
 </h1>
 
-<h4 align="center">
+## About
 Repository for version Demo of E-TRaC...
-</h4>
