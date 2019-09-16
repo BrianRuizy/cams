@@ -5,5 +5,5 @@
 </h1>
 
 <h4 align="center">
-E-TRaC is an innovative analytics software solution...
+Repository for version Demo of E-TRaC...
 </h4>
